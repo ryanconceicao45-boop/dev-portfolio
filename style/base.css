@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background: #141414;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#icon-logo {
+    margin-right: 16px;
+    color: #F8CA95;
+    font-size: 45px;
+}
+
+.caixa-infos-dav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.des-autor {
+    color: #fff;
+    font-size: 18px;
+}
+
+.des-status {
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.box-navegacao {
+    display: flex;
+    margin-right: 20px;
+}
+
+.box-link-nav {
+    margin-right: 40px;
+}
+
+.link-nav {
+    transition: 0.3s;
+    margin: 0px 10px 0px 10px;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.link-nav:hover {
+    transition: 0.3s;
+    background: #F8CA95;
+    color: #232323;
+}
+
+.box-white-click {
+    display: none;
+}
