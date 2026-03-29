@@ -1,3 +1,8 @@
+:root {
+    --bg: #1a1a1a;
+    --claro: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +12,9 @@
 
 /* BARRA DE NAVEGAÇÃO */
 body {
-    width: 100vw;
-    height: 100vh;
+    margin: 0 auto;
+    background: var(--bg);
+    color: var(--claro);
 }
 
 header {
@@ -35,12 +41,12 @@ header {
 
 .des-autor {
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .des-status {
     color: #a3a3a3;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .box-navegacao {
@@ -64,11 +70,11 @@ header {
 }
 
 .link-nav:hover {
-    transition: 0.3s;
+    transition: 0.2s;
     background: #F8CA95;
     color: #232323;
 }
 
 .box-white-click {
-    display: none;
+    display: flex;
 }
