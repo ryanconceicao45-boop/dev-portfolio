@@ -29,13 +29,13 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
     padding: 15px 60px 15px 60px;
 
-    gap: 100px;
+    gap: 20%;
 }
 
 /* caixa descricao dev */
@@ -49,7 +49,7 @@ body {
 #icon-logo {
     margin-right: 16px;
     border-radius: 50%;
-    width: 45px;
+    width: calc(23px + 1.5vw);
 }
 
 /* title Ryan.dev */
@@ -78,21 +78,19 @@ body {
 /* Caixa dos link */
 .box-navegacao {
     display: flex;
-    margin-right: 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 /* botao de navegacao */
 .link-nav {
-    transition: 0.3s;
-    margin-left: clamp(0px, 10vw, 15px);
     padding: 5px 15px 5px 15px;
     border: none;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: calc(10px + 0.3vw);
     color: #eeeeee;
     transition: 0.5s;
 }
