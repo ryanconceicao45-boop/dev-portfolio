@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,48 +14,92 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>portfolio Ryan</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="caixa-infos-dav">
-            <span id="icon-logo" class="material-symbols-outlined">
-                logo_dev
-            </span>
-            <div class="box-des">
+    <header class="header">
+
+        <section class="caixa-infos-dav">
+
+            <img id="icon-logo" src="./img/base/avatar-cell.jpg" alt="avatar-cell">
+            
+            <section class="box-des">
                 <h3 class="des-autor">Ryan.dev</h3>
                 <p class="des-status">Última atualização: 13/03/2026 ás 23h15</p>
-            </div>
-        </div>
-        <div class="box-navegacao">
-            <nav class="box-link-nav">
-                <a class="link-nav" href="#inicio">Inicio</a>
-                <a class="link-nav" href="#sobre">Sobre Mim</a>
-                <a class="link-nav" href="#habilidade">Habilidade</a>
-                <a class="link-nav" href="#projto">Projeto</a>
-                <a class="link-nav" href="#contato">Contato</a>
-            </nav>
-            <input class="box-white-click" type="checkbox" id="toggle">
-            <label for="toggle" class="btn-toggle"></label>
-        </div>
+            </section>
+        </section>
+
+        <header>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+            <section class="box-navegacao" id="menu">
+                <div class="info-cell">
+                    <img src="./img/base/avatar-cell.jpg" alt="avatar-cell">
+                    <h3 class="des-autor-cell">Ryan.dev</h3>
+                    <p class="des-autor-cell">Última atualização: 13/03/2026 ás 23h15</p>
+                </div>
+                <a onclick="toggleMenu()" class="link-nav" href="#inicio">
+                    <span id="icons-navegacao" class="material-symbols-outlined">
+                        home
+                    </span>
+                    Inicio
+                </a>
+                <a onclick="toggleMenu()" class="link-nav" href="#sobre">
+                    <span id="icons-navegacao" class="material-symbols-outlined">
+                        article_person
+                    </span>
+                    Sobre Mim
+                </a>
+                <a onclick="toggleMenu()" class="link-nav" href="#habilidade">
+                    <span id="icons-navegacao" class="material-symbols-outlined">
+                        wb_incandescent
+                    </span>
+                    Habilidade
+                </a>
+                <a onclick="toggleMenu()" class="link-nav" href="#projeto">
+                    <span id="icons-navegacao" class="material-symbols-outlined">
+                        list_alt_check
+                    </span>
+                    Projeto
+                </a>
+                <a onclick="toggleMenu()" class="link-nav" href="#contato">
+                    <span id="icons-navegacao" class="material-symbols-outlined">
+                        perm_phone_msg
+                    </span>
+                    Contato
+                </a>
+            </section>
+        </header>
     </header>
-    <main>
-        <img src="./img/base/background-p.png" alt="background-principal">
-        <div class="conteiner">
-            <p>Prazer, eu sou</p>
-            <h1>RYAN DA CONCEIÇÃO</h1>
-            <p><b>Desenvolvedor Front-End</b> iniciante focado em criar interfaces modernas, organizadas e
-                responsivas, enquanto aprimoro continuamente minhas habilidades no desenvolvimento web.</p>
-            <button>
-                Saiba mais sobre mim →
-            </button>
-        </div>
-        <div class="avatar-principal">
-            <img src="./img/base/avatar-geral.png" alt="Meu-avatar">
-        </div>
+    <!-- 
+    <main id="inicio" class="home-pg">
+        <section class="box-home-geral">
+            <section class="box-infos-home">
+                <p class="p-sub-home">Prazer, eu sou</p>
+                <h1>RYAN DA CONCEIÇÃO</h1>
+                <p class="p-descript-home"><b>Desenvolvedor Front-End</b> iniciante focado em criar interfaces modernas,
+                    organizadas e
+                    responsivas, enquanto aprimoro continuamente minhas habilidades no desenvolvimento web.</p>
+                <button class="botao-sobre-mim">
+                    Saiba mais sobre mim →
+                </button>
+            </section>
+
+            <section class="avatar-principal">
+                <img src="./img/base/avatar-geral.png" alt="Meu-avatar">
+            </section>
+        </section>
     </main>
-    <section>
-        <div>
+
+    <section id="sobre" class="sobremim-pg">
+        <div class="box-home-office">
             <img src="./img/base/home-office.png" alt="home-office-img">
         </div>
         <div>
@@ -122,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="habilidade">
         <div>
             <h2>MINHAS HABILIDADES</h2>
             <p>Ao lado estão algumas das minhas principais habilidades e tecnologias utilizadas no desenvolvimento web,
@@ -195,7 +241,7 @@
             <p>Estas são algumas das ferramentas que utilizo no desenvolvimento web, comunicação e design ao longo dos
                 meus projetos e serviços, garantindo eficiência, organização e qualidade nas entregas.</p>
         </div>
-        <div>
+        <section>
             <img src="./img/tools/icon-canva.webp" alt="icon-canva">
             <img src="./img/tools/icon-chatgpt.png" alt="icon-chatgpt">
             <img src="./img/tools/icon-claud.webp" alt="icon-claud">
@@ -208,9 +254,9 @@
             <img src="./img/tools/icon-photoom.png" alt="icon-photoom">
             <img src="./img/tools/icon-ps.png" alt="icon-ps">
             <img src="./img/tools/icon-vscode.png" alt="icon-vscode">
-        </div>
+        </section>
     </section>
-    <section>
+    <section id="projeto">
         <div>
             <h2>MEUS PROJETOS</h2>
             <p>Apresento aqui alguns projetos desenvolvidos durante meu processo de aprendizado e aprimoramento no
@@ -278,7 +324,7 @@
             </div>
         </div>
     </section>
-    <article>
+    <article id="contato">
         <div>
             <h2>ENTRE EM CONTATO</h2>
             <p>Estou sempre aberto a novas oportunidades, projetos e colaborações. Se quiser trocar uma ideia, tirar
@@ -345,6 +391,9 @@
             <img src="./img/icon/icon-linkdin.png" alt="">
         </div>
     </footer>
+    -->
+    <script src="./src/function.js"></script>
+
 </body>
 
 </html>

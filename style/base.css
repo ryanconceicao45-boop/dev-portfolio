@@ -8,73 +8,100 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    outline: none;
 }
 
 /* BARRA DE NAVEGAÇÃO */
 body {
-    margin: 0 auto;
     background: var(--bg);
     color: var(--claro);
+    height: 100vh;
+    width: 100vw;
 }
 
-header {
+.header {
+
     background: #141414;
     position: fixed;
     display: flex;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
-    padding: 20px;
+    padding: 15px 60px 15px 60px;
+
+    gap: 100px;
 }
 
-#icon-logo {
-    margin-right: 16px;
-    color: #F8CA95;
-    font-size: 45px;
-}
-
+/* caixa descricao dev */
 .caixa-infos-dav {
     display: flex;
     justify-items: center;
     align-items: center;
 }
 
+/* Logo dev */
+#icon-logo {
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 45px;
+}
+
+/* title Ryan.dev */
 .des-autor {
-    color: #fff;
+    color: #e5e5e5;
     font-size: 14px;
 }
 
+/* descript Última atualização: 13/03/2026 ás 23h15 */
 .des-status {
     color: #a3a3a3;
     font-size: 11px;
 }
 
+/* botão escondido no desktop */
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#icons-navegacao {
+    display: none;
+}
+
+/* Caixa dos link */
 .box-navegacao {
     display: flex;
     margin-right: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.box-link-nav {
-    margin-right: 40px;
-}
-
+/* botao de navegacao */
 .link-nav {
     transition: 0.3s;
-    margin: 0px 10px 0px 10px;
+    margin-left: clamp(0px, 10vw, 15px);
     padding: 5px 15px 5px 15px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 0.8rem;
-    color: #fff;
+    color: #eeeeee;
+    transition: 0.5s;
+}
+
+.info-cell {
+    display: none;
 }
 
 .link-nav:hover {
-    transition: 0.2s;
     background: #F8CA95;
     color: #232323;
-}
-
-.box-white-click {
-    display: flex;
 }
