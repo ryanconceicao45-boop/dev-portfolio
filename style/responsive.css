@@ -53,7 +53,7 @@
         justify-content: start;
         /* centraliza vertical */
 
-        gap: 20px;
+        gap: calc(10px + 0.9vh);
 
         /* efeito glass */
         background: #1f1f1f;
