@@ -1,6 +1,7 @@
 :root {
     --bg: #fff;
-    --header-height: 80px;
+    --header-height: 70px;
+    --color-principal: #f0ba97;
 }
 
 * {
@@ -10,4 +11,15 @@
     text-decoration: none;
     outline: none;
     color: #ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    background: #242424;
 }

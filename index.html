@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./style/variables.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/global.css">
@@ -17,20 +17,12 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>portfolio Ryan remove</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-    </style>
 </head>
 
 <body>
-
     <header class="header">
         <section class="caixa-infos-dav">
-            <img id="icon-logo" src="./img/base/avatar-cell.jpg" alt="avatar-cell">
+            <img src="./img/base/avatar-cell.jpg" alt="avatar-cell">
             <section class="box-des">
                 <h3 class="des-autor">Ryan.dev</h3>
                 <p class="des-status">Última atualização: 13/03/2026 ás 23h15</p>
@@ -41,11 +33,11 @@
             <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
             <section class="box-navegacao" id="menu">
-                <!-- <div class="info-cell">
+                <div class="info-cell">
                     <img src="./img/base/avatar-cell.jpg" alt="avatar-cell">
                     <h3 class="des-autor-cell">Ryan.dev</h3>
                     <p class="des-autor-cell">Última atualização: 13/03/2026 ás 23h15</p>
-                </div> -->
+                </div>
                 <a onclick="toggleMenu()" class="link-nav" href="#inicio">
                     <span id="icons-navegacao" class="material-symbols-outlined">
                         home
@@ -81,29 +73,30 @@
     </header>
 
 
-        <!-- 
+
     <main id="inicio" class="home-pg">
         <section class="box-home-geral">
-
             <div class="box-infos-home">
                 <p class="p-sub-home">Prazer, eu sou</p>
-                <h1>RYAN DA CONCEIÇÃO</h1>
+                <h1 class="titulo-principal">RYAN DA CONCEIÇÃO</h1>
                 <p class="p-descript-home">
                     <strong>Desenvolvedor Front-End</strong> iniciante, focado em criar interfaces modernas,
                     organizadas e responsivas, enquanto aprimoro continuamente minhas habilidades
                     no desenvolvimento web.
-                </p> 
-                <a href="#sobre" class="botao-sobre-mim" type="button">
-                    Saiba mais sobre mim →
-                </a>
+                </p>
+                <div class="box-link-mim">
+                    <a href="#sobre" class="botao-sobre-mim" type="button">
+                        Saiba mais sobre mim →
+                    </a>
+                </div>
             </div>
 
             <div class="avatar-principal">
                 <img src="./img/base/avatar-geral.png" alt="Avatar de Ryan da Conceição">
             </div>
-
         </section>
     </main>
+    <!-- 
     <section id="sobre" class="sobremim-pg">
         <div class="box-home-office">
             <img src="./img/base/home-office.png" alt="home-office-img">
