@@ -23,12 +23,11 @@
 }
 
 @media (max-width: 768px) {
-
     /* botão escondido no desktop */
+
     .menu-btn {
         display: block;
     }
-
     .header {
         justify-content: space-between;
         align-items: center;

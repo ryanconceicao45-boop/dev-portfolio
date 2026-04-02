@@ -1,0 +1,12 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    background-color: black;
+    z-index: 1000;
+} 
+
+.icon-logo {
+    width: 220px;
+}

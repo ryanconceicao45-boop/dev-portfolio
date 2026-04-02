@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/base.css">
-    <link rel="stylesheet" href="./style/layout.css">
+    
+    <link rel="stylesheet" href="./style/variables.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/responsive.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,26 +29,23 @@
 <body>
 
     <header class="header">
-
         <section class="caixa-infos-dav">
-
             <img id="icon-logo" src="./img/base/avatar-cell.jpg" alt="avatar-cell">
-
             <section class="box-des">
                 <h3 class="des-autor">Ryan.dev</h3>
                 <p class="des-status">Última atualização: 13/03/2026 ás 23h15</p>
             </section>
         </section>
 
-        <header>
+        <section>
             <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
             <section class="box-navegacao" id="menu">
-                <div class="info-cell">
+                <!-- <div class="info-cell">
                     <img src="./img/base/avatar-cell.jpg" alt="avatar-cell">
                     <h3 class="des-autor-cell">Ryan.dev</h3>
                     <p class="des-autor-cell">Última atualização: 13/03/2026 ás 23h15</p>
-                </div>
+                </div> -->
                 <a onclick="toggleMenu()" class="link-nav" href="#inicio">
                     <span id="icons-navegacao" class="material-symbols-outlined">
                         home
@@ -77,9 +77,11 @@
                     Contato
                 </a>
             </section>
-        </header>
+        </section>
     </header>
 
+
+        <!-- 
     <main id="inicio" class="home-pg">
         <section class="box-home-geral">
 
@@ -102,7 +104,6 @@
 
         </section>
     </main>
-          <!-- 
     <section id="sobre" class="sobremim-pg">
         <div class="box-home-office">
             <img src="./img/base/home-office.png" alt="home-office-img">
