@@ -1,35 +1,37 @@
 .header {
     position: fixed;
-    display: flex;
     width: 100%;
     height: var(--header-height);
+    top: 0;
+    left: 0;
+
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #1e1e1e; */
+
+    background-color: #191919;
     z-index: 1000;
 }
 
 .caixa-infos-dav {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
-.caixa-infos-dav img {
-    width: 40px;
-    margin-right: 20px;
-    border-radius: 50%;
+.box-des {
+    align-content: center;
 }
 
 .des-autor {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .des-status {
-    font-size: 13px;
+    font-size: 12px;
     color: #aeaeae;
 }
 
-/* ELEMENTOS DESABILIDADO PARA RESPONSIVE */
 .info-cell {
     display: none;
 }
@@ -55,9 +57,10 @@
     margin-right: 5px;
     border-radius: 7px;
     transition: 0.5s;
-    
-    font-size: 14px;
-    font-weight: 500;
+
+    font-size: 13px;
+    font-weight: 300;
+    color: #e4e4e4;
 }
 
 .link-nav:hover {
@@ -65,4 +68,28 @@
     background: var(--color-principal);
     padding: 5px 15px;
     color: #1e1e1e;
+}
+
+.info-cell {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+#icons-navegacao {
+    display: none;
+}
+
+.box-status {
+    display: flex;
+}
+
+.box-status img {
+    width: clamp(40px, 1vw, 40px);
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 2px solid #ffb973;
 }

@@ -21,13 +21,13 @@
 
 <body>
     <header class="header">
-        <section class="caixa-infos-dav">
+        <div class="box-status">
             <img src="./img/base/avatar-cell.jpg" alt="avatar-cell">
-            <section class="box-des">
+            <div class="box-des">
                 <h3 class="des-autor">Ryan.dev</h3>
                 <p class="des-status">Última atualização: 13/03/2026 ás 23h15</p>
-            </section>
-        </section>
+            </div>
+        </div>
 
         <section>
             <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -72,8 +72,6 @@
         </section>
     </header>
 
-
-
     <main id="inicio" class="home-pg">
         <section class="box-home-geral">
             <div class="box-infos-home">
@@ -84,90 +82,79 @@
                     organizadas e responsivas, enquanto aprimoro continuamente minhas habilidades
                     no desenvolvimento web.
                 </p>
-                <div class="box-link-mim">
-                    <a href="#sobre" class="botao-sobre-mim" type="button">
-                        Saiba mais sobre mim →
-                    </a>
-                </div>
+                <a href="#sobre" class="botao-sobre-mim" type="button">
+                    Saiba mais sobre mim →
+                </a>
             </div>
-
-            <div class="avatar-principal">
-                <img src="./img/base/avatar-geral.png" alt="Avatar de Ryan da Conceição">
+            <div class="box-avatar">
+                <img class="avatar-principal" src="./img/base/avatar-geral.png" alt="Avatar de Ryan da Conceição">
             </div>
         </section>
     </main>
-    <!-- 
-    <section id="sobre" class="sobremim-pg">
-        <div class="box-home-office">
-            <img src="./img/base/home-office.png" alt="home-office-img">
-        </div>
-        <div>
-            <h2>SOBRE MIM</h2>
-            <p>Sou desenvolvedor Front-End iniciante apaixonado por tecnologia desde criança. Meu interesse começou
-                quando tive meu primeiro computador com Windows XP, onde comecei a explorar hardware e software e
-                entender como tudo funcionava.</p>
-            <p>Em 2017 tive meu primeiro contato com programação utilizando Lua, desenvolvendo scripts para jogos como
-                MTA:SA e Roblox. Essa experiência despertou meu interesse pela lógica de programação e pela criação de
-                soluções digitais.</p>
-            <p>Atualmente estudo desenvolvimento Front-End e busco aprimorar constantemente minhas habilidades para
-                criar interfaces modernas, organizadas e responsivas.</p>
 
-            <div>
-                <button>
-                    <span class="material-symbols-outlined">
-                        docs
-                    </span>
-                    Baixar CV
-                </button>
+    <section id="sobre" class="sobre-mim-pg">
 
-                <button>
-                    <span class="material-symbols-outlined">
-                        docs
-                    </span>
-                    Ver Projetos
-                </button>
+        <div class="info-jornada-mim">
+            <div class="box-home-office">
+                <img src="./img/base/home-office.png" alt="home-office-img">
+            </div>
+            <div class="box-info-hq">
+                <h2>SOBRE MIM</h2>
+                <p>Sou desenvolvedor Front-End iniciante apaixonado por tecnologia desde criança. Meu interesse começou
+                    quando tive meu primeiro computador com Windows XP, onde comecei a explorar hardware e software e
+                    entender como tudo funcionava.<br><br>Em 2017 tive meu primeiro contato com programação utilizando
+                    Lua,
+                    desenvolvendo scripts para jogos como
+                    MTA:SA e Roblox. Essa experiência despertou meu interesse pela lógica de programação e pela criação
+                    de
+                    soluções digitais.<br><br>Atualmente estudo desenvolvimento Front-End e busco aprimorar
+                    constantemente
+                    minhas habilidades para
+                    criar interfaces modernas, organizadas e responsivas.</p>
+                <div class="btn-ver-sobre-mim">
+                    <a class="box-bnt-service" href="#projeto">
+                        Baixar CV
+                    </a>
+
+                    <a class="box-bnt-service" href="#projeto">
+                        Ver Projetos
+                    </a>
+                </div>
             </div>
         </div>
-        <div>
-            <div>
+
+        <div class="skil-boxsquad">
+            <div class="box-skil">
+                <div class="luz-border"></div>
                 <h3>
-                    <span class="material-symbols-outlined">
-                        arrow_right
-                    </span>
                     Minha Jornada
                 </h3>
                 <p>Comecei na tecnologia explorando hardware e evoluí para o desenvolvimento front-end.</p>
             </div>
-            <div>
+            <div class="box-skil">
+                <div class="luz-border"></div>
                 <h3>
-                    <span class="material-symbols-outlined">
-                        arrow_right
-                    </span>
                     Meu objetivo
                 </h3>
                 <p>Criar interfaces modernas e impactantes, evoluindo constantemente na área.</p>
             </div>
-            <div>
+            <div class="box-skil">
+                <div class="luz-border"></div>
                 <h3>
-                    <span class="material-symbols-outlined">
-                        arrow_right
-                    </span>
                     Diferencial
                 </h3>
                 <p>Atenção aos detalhes, performance e experiência do usuário.</p>
             </div>
-            <div>
+            <div class="box-skil">
+                <div class="luz-border"></div>
                 <h3>
-                    <span class="material-symbols-outlined">
-                        arrow_right
-                    </span>
                     Curiosidade
                 </h3>
                 <p>Sempre buscando aprender algo novo e transformar ideias em projetos reais.</p>
             </div>
         </div>
     </section>
-  
+    <!--   
     <section id="habilidade">
         <div>
             <h2>MINHAS HABILIDADES</h2>

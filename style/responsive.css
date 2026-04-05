@@ -4,7 +4,7 @@
 =========================================================
 */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* botão escondido no desktop */
 
     .menu-btn {
@@ -113,4 +113,32 @@
         border-radius: 0;
     }
 
+}
+
+/* 
+=========================================================
+===================( PAGINA INICIO )=====================
+=========================================================
+*/
+
+@media screen and (max-width: 768px) {
+    .box-home-geral {
+        margin: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        
+    }
+
+    .box-infos-home {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .box-avatar img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
 }
